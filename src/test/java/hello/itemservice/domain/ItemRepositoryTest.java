@@ -64,7 +64,7 @@ class ItemRepositoryTest {
         //given
         Item item = new Item("item1", 10000, 10);
         Item savedItem = itemRepository.save(item);
-        Long itemId = savedItem.getId();
+         Long itemId = savedItem.getId();
 
         //when
         ItemUpdateDto updateParam = new ItemUpdateDto("item2", 20000, 30);

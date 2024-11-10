@@ -20,7 +20,8 @@ import java.util.Optional;
 @Transactional
 public class JpaItemRepository implements ItemRepository {
 
-    private final EntityManager em;
+    private final EntityManager em; //Jpa 의 모든 동작인 엔티티 매니저를 통해 이루어진다.
+    //엔티티 매니저 내부에 데이터 소스를 가지고 있고, 데이터베이스에 접근할수 있다.
 
     public JpaItemRepository(EntityManager em) {
         this.em = em;
